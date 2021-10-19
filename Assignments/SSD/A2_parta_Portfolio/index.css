@@ -1,0 +1,414 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+    /* bakwas */
+    /* background-image: url(https://www.w3schools.com/css/img_flwr.gif), url(data:image/jpeg;base64,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);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat; */
+    /* padding: 15px; */
+
+ 
+    
+}
+
+#navbar
+{
+    text-align: right;
+    width: 99%;
+    margin: 0px;
+    padding: 14px 16px;
+    border: 10px;
+    background-color: black;
+    /* background-color: #333; */
+    color:crimson;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    
+    
+}
+.nav
+{
+color: white;
+border: none;
+background: none;
+text-decoration: none;
+font-size: large; 
+font-style: italic;
+}
+
+.nav:hover {
+    background-color:rgb(1, 120, 255);
+    color:black;
+  }
+
+
+
+.right_window
+{
+    
+    /* float: left; */
+    text-align: left;
+    margin-left: 400px;
+    padding: 14px 16px;
+    /* border: 1px solid black; */
+    /* background-color:khaki; */
+    /* color:crimson; */
+}
+
+.left_window
+{
+    float: left;
+    margin-left: 30px; 
+    margin-top: 80px;
+    /* border: 1px solid red; */
+    
+}
+img
+{
+    border-radius: 100%;
+    max-width: 100%;
+}
+#name
+{
+    text-align: center;
+    font-style: italic;
+}
+#subname
+{
+    text-align: center;
+}
+
+.home_content ,.Education_content, .Project_content, .Contact_content,.home_content_lw,.Contact_content_lw
+{
+    display: none;
+}
+
+
+hr.dotted {
+    /* border-top: 3px dotted rgb(6, 61, 163); */
+    border: 0;
+    height: 10px;
+    background-image: linear-gradient(to right, transparent, rgb(14, 12, 146), transparent); 
+  }
+
+.home-inside0
+{
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(to right, transparent, #fac0c0, transparent); 
+
+}
+
+.home-inside,.home-inside1,.home-inside2
+{
+    /* float: left; */
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    /* text-align: center; */
+    background-image: linear-gradient(to right, transparent, rgb(131, 221, 202), transparent); 
+
+}
+
+.education-inner
+{
+    text-align: center;
+    font-size: 1.4em;
+    font-style: initial;
+    
+}
+
+/* Styling Contact Page */
+
+.form
+{
+    border-radius: 5px;
+  background-color: #e6d1d1;
+  padding: 20px;
+}
+
+input[type=text],input[type=email]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2.5px solid blue;
+    border-radius: 20px;
+    /* background-color: rgb(0, 255, 55); */
+    /* border-bottom: 2px solid red; */
+    
+}
+input[type=text]:focus,input[type=email]:focus
+{
+    
+    background-color: rgb(0, 255, 55);
+    /* border-bottom: 2px solid red; */
+    
+}
+textarea
+{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid blue;
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+textarea:focus
+{
+    background-color: rgb(0, 255, 55);;
+}
+input[type=submit], input[type=reset]
+{
+    
+    margin: 10px 10px;
+    cursor: pointer;
+    background-color: #b3b9b4;
+    text-decoration: none;
+    width: 20%;
+}
+input[type=submit]:hover, input[type=reset]:hover
+{
+    margin: 10px 10px;
+    cursor: pointer;
+    background-color: rgb(0, 255, 55);
+    width: 20%;
+}
+
+
+.iconss
+{
+border: none;
+background: none;
+text-decoration: none;
+font-size: xx-large; 
+font-style: italic;
+}
+
+.links
+{
+    text-align: center;
+    background-color:#e6d1d1;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    padding: 10px 70px;
+}
+.links1,.links2,.links3
+{
+    display: flex;
+    background-color: #cda8e2;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+}
+
+/* End Of Styling Contact Page */
+
+/* Styling Project Page */
+
+.project-inside
+{
+    
+text-align: center;
+font-style: italic;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1em;
+}
+.project-inside h2
+{
+    /* border: 1px solid rgb(0, 0, 0); */
+    margin: 20px;
+    /* background-color: rgb(121, 243, 91); */
+    /* border-radius: 50%; */
+    padding: 10px;
+    
+}
+.pro-ins 
+{
+    border: 1px solid black;
+    background-color: #d1a5e6;
+    border-radius: 100%;
+    padding: 15px;
+    /* bakbas */
+    animation-name: bgcolor;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    
+}
+@keyframes bgcolor
+{
+    from{background-color:aqua; }
+    to{background-color: #d1a5e6;}
+}
+
+/* End of Project Page */
+
+
+/* trying new bakbas */
+
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 75ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 1px solid; */
+    font-family: monospace;
+    font-size: 1.7em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  /* cv */
+  .pdf
+  {
+    background-image: linear-gradient(to right, transparent, rgb(255, 226, 173), transparent); 
+    text-align: center;
+    align-items: center;
+    margin: 1px;
+    padding: 10px;
+      
+  }
+  #cv
+  {
+    
+    text-decoration: none;
+    color: rgb(199, 69, 69);
+    border: none;
+    background: none;
+    font-size: large; 
+    font-style: italic;
+  }
+  /* End cv */
+
+
+  /* Clock */
+
+  .time
+  {
+    background-color: #bdffc8;
+    float: right;
+    bottom: 0;
+    border: 1px solid black;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+    border-radius: 10%;
+  }
+
+  /* End Clock */
+
+
+/* Media Queries */
+
+
+
+@media only screen and (max-width: 992px) {
+
+    
+    
+    #navbar
+    {
+        width: 94%;
+        text-align: center;
+    }
+    
+    #fotu
+    {
+        max-width: 100%;
+        align-items: center;
+        border: 1px solid black;
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+      
+    .left_window
+    {
+    width: 100%;
+    float: none;
+    margin-left: 10px;
+    
+    
+    }
+    .right_window
+    {
+    width: 100%;
+    margin-left: 0px;
+    }
+
+    .home-inside0
+    {
+    margin: 0px;
+    }
+    .home-inside,.home-inside1,.home-inside2
+    {
+    display: block;
+    margin: 0px;
+    
+    }
+
+    .links
+    {
+    margin-top: 0px;
+    padding: 10px 50px;
+    }
+
+    .typing-demo {
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        font-family: monospace;
+        font-size: .80em;
+      }
+
+      .pro-ins 
+    {
+    border-radius: 0%;
+    margin-right: 25px;
+    }
+
+    .form
+    {
+    margin-right: 30px;
+    }
+
+    
+
+
+      
+   
+
+    
+    
+}
+
+/* End Media Queries */
+  
